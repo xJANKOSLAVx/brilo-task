@@ -1,0 +1,98 @@
+:root{
+  --primary: #3697A7;
+  --secondary: #1F464D;
+  --dark: #333333;
+  --light: #E5EAE8;
+  --header-height: 5rem;
+}
+
+body, html{
+  font-family: 'Noto Sans', sans-serif;
+  background-color: var(--dark);
+  color: var(--light);
+  font-weight: 300;
+  font-variant-ligatures: none;
+	font-size: 1vw;
+	position: relative;
+	width: 100%;
+}
+
+body, html {
+    overflow-x: hidden;
+}
+
+body *{
+  box-sizing: border-box;
+}
+
+section, header, footer{
+  width: 100%;
+}
+
+section, footer{
+  margin-top: 7rem;
+}
+
+section:first-of-type{
+  margin-top: calc(7rem + (var(--header-height)));
+}
+
+.middle {
+	margin: 0px auto;
+	width: 70rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+h1, h2, h3{
+  line-height: 110%;
+  font-weight: 200;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+}
+
+h1{
+  font-size: 2.5rem;
+}
+
+h2{
+  font-size: 1.5rem;
+}
+
+h3{
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+p{
+  line-height: 150%;
+  margin-bottom: 1.25rem;
+}
+
+.button{
+  padding: .5rem 8rem;
+  background-color: var(--primary);
+  text-transform: uppercase;
+}
+
+@media (max-width: 1000px){
+  html, body { font-size: 1.33vw; }
+
+	.middle {
+  	width: 60rem;
+  }
+}
+
+@media (max-width: 500px){
+  html, body { font-size: 3.5vw; }
+
+  section:first-of-type{
+    margin-top: calc(3rem + (var(--header-height)));
+  }
+
+  .middle {
+  	width: 25rem;
+  }
+}
