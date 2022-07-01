@@ -1,0 +1,19 @@
+<section class="blog">
+  <div class="blog__image">
+    <img src="<%= image_path "hero.jpg" %>" alt="girl with cup of tea">
+  </div>
+  <div class="middle">
+    <article class="blog__article">
+      <p id="notice"><%= notice %></p>
+      <h1>
+        <%= @article.title %>
+      </h1>
+      <p>
+        <%= @article.description %>
+      </p>
+      <p>
+        <%= @article.text %>
+      </p>
+    </article>
+  </div>
+</section>
